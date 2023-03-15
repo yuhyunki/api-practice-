@@ -1,21 +1,18 @@
-import Content from './Component/Content';
-import Header from './Component/Header';
-import MainPage from './Page/MainPage';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Layout from './layouts/Layout';
+import Fish from './pages/Fish';
+import './reset.css'
 
 function App() {
-  // 메인
-  // return (
-  //   <>
-  //     <Header />
-  //     <Content />
-  //   </>
-  // );
-
   return (
-    <>
-      <MainPage/>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route path="fish" element={<Fish/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

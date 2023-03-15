@@ -1,0 +1,19 @@
+.Menubar {
+    width: 100vw;
+    height: 100px;
+    background-color: skyblue;
+    display: flex;
+}
+
+.MenuComponents {
+    color: pink;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.MenuComponents li {
+    margin: 10px;
+}

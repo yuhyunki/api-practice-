@@ -2,7 +2,8 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from './layouts/Layout';
 import Fish from './pages/Fish';
 import Houseware from './pages/Houseware';
-import './reset.css'
+import './reset.css';
+import './font.css';
 
 function App() {
   return (

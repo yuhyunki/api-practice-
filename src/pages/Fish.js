@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getAllFishList } from "../apis/FishAPI";
 import FishItem from '../components/FishItem';
+import './Fish.css';
 
 function Fish() {
 
@@ -27,10 +28,12 @@ function Fish() {
 
     return (
         <>
-            <h1>fish</h1>
-            <div>
-                {fishList.map(fish => <FishItem key={fish.id} fish={fish} />)}
+            <div className="Fish">
+                <h1 className="currentFish">지금 잡을 수 있는 물고기 목록</h1>
+                <div className="FishList">
+                    {fishList.map(fish => <FishItem key={fish.id} fish={fish} />)}
 
+                </div>
             </div>
         </>
     );

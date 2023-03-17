@@ -4,15 +4,16 @@ import menuStyle from './Menubar.module.css';
 function Menubar() {
 
     const activeStyle={
-        backgroundColor: 'red'
+        backgroundColor: '#ffce00',
+        color: '#5e513d'
     };
 
     return (
         <div className={menuStyle.Menubar}>
             <ul className={menuStyle.MenuComponents}>
-                <li><NavLink to="/" style={ ({isActive}) => isActive? activeStyle: undefined }>HOME</NavLink></li>
-                <li><NavLink to="/fish" style={ ({isActive}) => isActive? activeStyle: undefined }>FISH</NavLink></li>
-                <li><NavLink to="/houseware" style={ ({isActive}) => isActive? activeStyle: undefined }>HOUSEWARE</NavLink></li>
+                <li><NavLink to="/" style={ ({isActive}) => isActive? activeStyle: undefined } className={menuStyle.NavLink}>홈</NavLink></li>
+                <li><NavLink to="/fish" style={ ({isActive}) => isActive? activeStyle: undefined } className={menuStyle.NavLink}>물고기</NavLink></li>
+                <li><NavLink to="/houseware" style={ ({isActive}) => isActive? activeStyle: undefined } className={menuStyle.NavLink}>가구</NavLink></li>
             </ul>
         </div>
     )

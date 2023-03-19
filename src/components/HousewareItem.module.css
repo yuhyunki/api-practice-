@@ -1,0 +1,37 @@
+.Whole {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+}
+
+.Container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+img {
+    margin: 5px;
+}
+
+h3 {
+    margin: 5px;
+    margin-left: 0;
+}
+
+.Variants {
+    border: none;
+    background-color: #66d267;
+    color: #fff9e4;
+    margin: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+}

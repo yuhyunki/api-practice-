@@ -1,0 +1,24 @@
+.Container {
+    position: fixed;
+    top: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 100%;
+}
+
+.InspoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 65%;
+}
+
+.Title {
+    text-align: center;
+}
+
+.ItemList {
+    height: 90%;
+    overflow: auto;
+    width: 35%;
+}

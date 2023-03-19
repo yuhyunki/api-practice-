@@ -1,0 +1,11 @@
+.Container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+textarea {
+    width: 80%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}

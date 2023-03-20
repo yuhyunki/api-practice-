@@ -35,6 +35,14 @@
 좌측 컬럼에 생성되는 리스트 확인 
 리스트 생성이 완료되면 복사하여 유저 개인이 보관 
 
+## 사용 기술
++ React hooks
+    - useState
+    - useEffect
+    - useMemo
+    - useRef
+    - useContext
+
 ## 추가 개발 희망사항 
 + 미구현 부분
     - 물고기 (제철 물고기/채집 달성도)
